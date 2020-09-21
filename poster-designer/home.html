@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster Designer | contact us</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/fd7b3cbc43.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <a href="#"><img src="assets/images/logo.png" alt="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="home">
+        <div class="info home-page">
+            <div class="container about-me">
+                <h1>Amelia Woods</h1>
+                <p>i am a graphic &amp; Web Designer based in new york, specializing <br> in user interface design and development</p>
+            </div>
+        </div>
+        <div class="my-projects">
+                <div class="box">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box odd">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box odd">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box odd">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box odd">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box odd">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box odd">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box odd">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+                <div class="box">
+                    <a href="#"><div class="overlay"><i class="fas fa-eye fa-3x fa-padding"></i></div></a>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="container footer-flex">
+            <div class="footer-col-1 col">
+                <h1>Poster Designer, Inc.</h1>
+                <p>&copy; 2020 Poster Designer, All right reserved. <br> Designed by robirurk.</p>
+            </div>
+            <div class="footer-col-2 col">
+                <ul>
+                    <li>Mohsinhaider45@gmail.com</li>
+                    <li>03362380588</li>
+                </ul>
+            </div>
+            <div class="footer-col-3 col">
+                <ul>
+                    <li><a href="https://www.facebook.com/Poster-Designer-101055674594565">Facebook</a></li>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">snapchat</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+            var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Poster Designer</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <a href="#"><img src="assets/images/logo.png" alt="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="main-section">
+        <div class="container section-container">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade slider-flex">
+                    <div class="col-1">
+                        <h1>light breakfast</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus similique cupiditate reprehenderit, dicta doloremque porro harum eum amet! Iure suscipit at aliquid enim, sunt consequuntur voluptate. Illo possimus dolorum ab.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, ullam? Possimus fugiat veritatis sequi sapiente mollitia magni, natus debitis blanditiis.</p>
+                        <p><span>client</span>Emma moris</p>
+                        <p><span>date</span>25/06/2020</p>
+                        <p><span>share</span>facebook, twitter, pinterest</p>
+                    </div>
+                    <div class="col-2" style="background-color: #e6e6e6;">&nbsp;</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="col-1">
+                        <h1>light lunch</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus similique cupiditate reprehenderit, dicta doloremque porro harum eum amet! Iure suscipit at aliquid enim, sunt consequuntur voluptate. Illo possimus dolorum ab.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, ullam? Possimus fugiat veritatis sequi sapiente mollitia magni, natus debitis blanditiis.</p>
+                        <p><span>client</span>Emma moris</p>
+                        <p><span>date</span>25/06/2020</p>
+                        <p><span>share</span>facebook, twitter, pinterest</p>
+                    </div>
+                    <div class="col-2" style="background: #e6e6e6;">&nbsp;</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="col-1">
+                        <h1>light dinner</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus similique cupiditate reprehenderit, dicta doloremque porro harum eum amet! Iure suscipit at aliquid enim, sunt consequuntur voluptate. Illo possimus dolorum ab.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, ullam? Possimus fugiat veritatis sequi sapiente mollitia magni, natus debitis blanditiis.</p>
+                        <p><span>client</span>Emma moris</p>
+                        <p><span>date</span>25/06/2020</p>
+                        <p><span>share</span>facebook, twitter, pinterest</p>
+                    </div>
+                    <div class="col-2">&nbsp;</div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <div class="btn">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center" class="">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer-flex">
+            <div class="footer-col-1 col">
+                <h1>Poster Designer, Inc.</h1>
+                <p>&copy; 2020 Poster Designer, All right reserved. <br> Designed by robirurk.</p>
+            </div>
+            <div class="footer-col-2 col">
+                <ul>
+                    <li>Mohsinhaider45@gmail.com</li>
+                    <li>03362380588</li>
+                </ul>
+            </div>
+            <div class="footer-col-3 col">
+                <ul>
+                    <li><a href="https://www.facebook.com/Poster-Designer-101055674594565">Facebook</a></li>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">snapchat</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+            var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+    </script>
+</body>
+</html>

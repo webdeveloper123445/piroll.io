@@ -1,0 +1,14 @@
+/*------FONTS------*/
+@font-face{
+    src: url(../fonts/monteserrat/Montserrat-Medium.ttf);
+    font-family: montserrat-med;
+}
+@font-face{
+    src: url(../fonts/nunitosans/NunitoSans-Regular.ttf);
+    font-family: nunito-sans-reg;
+}
+@font-face{
+    src: url(../fonts/nunitosans/NunitoSans-Bold.ttf);
+    font-family: nunito-sans-reg;
+    font-weight: bold;
+}
